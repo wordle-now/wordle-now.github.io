@@ -1,0 +1,38 @@
+<!DOCTYPE html><!--
+__ __ _____ _ _ __/`|'\___   _ _  _____ __ __      
+\ V  V / _ \ '_/ _` | / -_)_| ' \/ _ \ V  V /  Chris Shoup <chris@shoup.org>
+ \_/\_/\___/_| \__,_|_\___(_)_||_\___/\_/\_/-->
+<html lang="en">
+ <head>
+  <title>Wordle.NOW!</title>
+  <meta charset="UTF-8" /> 
+  <meta name="description" content="A multiplayer real-time wordle game" />
+  <meta name="keywords" content="wordle,now,multiplayer" />
+  <meta name="url" content="https://wordle.now" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width" />
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/wordle.svg" />
+  <link rel="apple-touch-icon" sizes="512x512" href="/wordle.svg" />
+  <link rel="canonical" href="https://wordle.now" />
+  <link rel="stylesheet" type="text/css" href="/wordle.css" />
+  <script src="/wordle.js"></script>
+ </head>
+ <body onload="$W.LOAD()">
+  <div id="w_body">
+   <div id="w_error"></div>
+   <div id="w_status">#<span id="w_game">0</span>/<span id="w_game_max">0</span>:&nbsp;<span id="w_player">(not connected)</span></div>
+   <div id="w_rows">
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+    <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
+   </div>
+   <div id="w_keyboard">
+    <div><div id="w_bubble" class="w_bubble"></div><b data-x="q">Q</b><b data-x="w">W</b><b data-x="e">E</b><b data-x="r">R</b><b data-x="t">T</b><b data-x="y">Y</b><b data-x="u">U</b><b data-x="i">I</b><b data-x="o">O</b><b data-x="p">P</b></div>
+    <div><b data-x="a">A</b><b data-x="s">S</b><b data-x="d">D</b><b data-x="f">F</b><b data-x="g">G</b><b data-x="h">H</b><b data-x="j">J</b><b data-x="k">K</b><b data-x="l">L</b></div>
+    <div><b data-x="enter" class="w_disabled">Enter</b><b data-x="z">Z</b><b data-x="x">X</b><b data-x="c">C</b><b data-x="v">V</b><b data-x="b">B</b><b data-x="n">N</b><b data-x="m">M</b><b data-x="backspace" class="w_disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-backspace"><path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path><path d="M12 10l4 4m0 -4l-4 4"></path></svg></b></div>
+   </div>
+  </div>
+ </body>
+</html>
