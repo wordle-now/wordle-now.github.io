@@ -15,16 +15,17 @@ __ __ _____ _ _ __/`|'\___   _ _  _____ __ __
   <link rel="canonical" href="https://wordle.now">
   <link rel="stylesheet" type="text/css" href="/wordle.css">
   <script src="/wordle.js"></script>
+  <script src="/confetti.js" defer="defer"></script>
  </head>
  <body onload="$W.LOAD()">
   <div id="w_body">
    <div id="w_modal"><div>
     <span id="w_modal_text"></span>
-    <span id="w_modal_yn"><input type="button" value="Yes" data-x="yes"><input type="button" value="No" data-x="no"></span>
+    <span id="w_modal_yn"><input type="button" id="w_modal_y" value="Yes" data-x="yes"><input type="button" id="w_modal_n" value="No" data-x="no"></span>
     <span id="w_modal_ok"><input type="button" value="Ok" data-x="ok"></span>
    </div></div>
    <div id="w_error"></div>
-   <div id="w_status">#<span id="w_game">0</span>/<span id="w_game_max">0</span>:&nbsp;<span id="w_player">(not connected)</span></div>
+   <div id="w_status">#<span id="w_game">0</span>:&nbsp;<span id="w_player">(not connected)</span></div>
    <div id="w_rows">
     <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
     <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
@@ -34,7 +35,11 @@ __ __ _____ _ _ __/`|'\___   _ _  _____ __ __
     <div><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
    </div>
    <div id="w_keyboard">
-    <div><div id="w_bubble" class="w_bubble"></div><b data-x="q">Q</b><b data-x="w">W</b><b data-x="e">E</b><b data-x="r">R</b><b data-x="t">T</b><b data-x="y">Y</b><b data-x="u">U</b><b data-x="i">I</b><b data-x="o">O</b><b data-x="p">P</b></div>
+    <div>
+     <div id="w_bubble" class="w_bubble"></div>
+     <div id="w_follow">&#9198;&nbsp;<span>follow</span>&nbsp;&#9197;</div>
+     <b data-x="q">Q</b><b data-x="w">W</b><b data-x="e">E</b><b data-x="r">R</b><b data-x="t">T</b><b data-x="y">Y</b><b data-x="u">U</b><b data-x="i">I</b><b data-x="o">O</b><b data-x="p">P</b>
+    </div>
     <div><b data-x="a">A</b><b data-x="s">S</b><b data-x="d">D</b><b data-x="f">F</b><b data-x="g">G</b><b data-x="h">H</b><b data-x="j">J</b><b data-x="k">K</b><b data-x="l">L</b></div>
     <div><b data-x="enter" class="w_disabled">Enter</b><b data-x="z">Z</b><b data-x="x">X</b><b data-x="c">C</b><b data-x="v">V</b><b data-x="b">B</b><b data-x="n">N</b><b data-x="m">M</b><b data-x="backspace" class="w_disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-backspace"><path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path><path d="M12 10l4 4m0 -4l-4 4"></path></svg></b></div>
    </div>

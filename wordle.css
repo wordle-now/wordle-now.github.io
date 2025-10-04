@@ -116,7 +116,7 @@ html, body {
 	transition: 0.5s;
 }
 #w_modal > div {
-	background-color: #eee;
+	background-color: #f5f8ff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -135,12 +135,13 @@ html, body {
 .w_modal_yn #w_modal_yn, .w_modal_ok #w_modal_ok { display: block !important; }
 #w_modal input {
 	font-size: max(1.15vw, 1em);
-	margin: 0.25vw 0.5vw 0.25vw 0.5vw;
-	padding: 0.25vw 0.5vw 0.25vw 0.5vw;
-	width: max(4vw, 50px);
+	margin: 0.5vw 1vw 0.5vw 1vw;
+	padding: 0.5vw 1vw 0.5vw 1vw;
 	font-weight: bold;
 	cursor: pointer;
-	background-color: #ddd;
+	background-color: #dce1ed;
+	border-color: #414a5e;
+	color: #414a5e;
 	transition: 0.15s;
 }
 #w_error {
@@ -166,6 +167,8 @@ html, body {
 	height: 10dvh;
 	width: 100%;
 	overflow: hidden;
+	color: #414a5e;
+	font-weight: bold;
 	font-size: 5dvmin;
 	display: flex;
 	align-items: center;
@@ -214,6 +217,20 @@ html, body {
 	border-color: #a4aec4 !important;
 	color: #fff !important;
 }
+#w_follow {
+	display: block;
+	z-index: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -5dvh;
+	color: #414a5e;
+	font-variant: small-caps; 
+	font-size: max(3dvmin, 3dvh) !important;
+	font-weight: bold;
+	display: none;
+}
+#w_follow span { text-decoration: underline; }
 #w_bubble {
 	z-index: 1;
 	position: absolute;
@@ -310,7 +327,7 @@ html, body {
 	opacity: 0.5;
 }
 @media (hover: hover) and (pointer: fine) {
-	#w_keyboard b:not(.w_disabled):hover {
+	#w_keyboard b:not(.w_disabled):hover, #w_follow:hover {
 		opacity: 0.8;
 		cursor: pointer;
 	}

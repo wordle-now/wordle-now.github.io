@@ -8,7 +8,8 @@ _adjectives: ['abiding','abject','able','abnormal','abrasive','abrupt','absent',
 _nouns: ['abductor','ability','absence','abutment','abyss','acceptor','access','accident','acclaim','accuracy','accuser','achiness','acidity','action','activism','activist','activity','actor','acuity','adaptor','addition','adequacy','admirer','adoption','advances','advisor','advocacy','affinity','agent','agility','agitator','agony','ailment','alarmist','allegory','alliance','altruism','ambiance','ambience','ambition','amenity','ancestor','anecdote','anger','animator','annuity','answer','anxiety','apathy','apology','appeal','approval','aptitude','aptness','arborist','ardor','argument','armament','arrestor','arsonist','artiness','artist','artistry','aspect','assent','assignor','assistor','assuror','athlete','atrocity','attack','attempt','attitude','auction','audacity','audience','audition','auditor','author','aversion','aviation','aviator','babble','bachelor','balance','banality','banjoist','baptism','bareness','barriers','bassist','bastion','beauty','behavior','beliefs','bigness','blogger','blueness','blunder','bohemian','boldness','boredom','botanist','boxer','bragger','brevity','broker','builder','burden','buyer','cadence','caginess','calamity','calmness','candor','capacity','caption','care','career','category','caution','cavity','chance','changes','chant','chaos','charity','charm','chatter','cheater','chemist','chiseler','citation','citizen','civilian','civility','claimant','clarity','cleaner','closing','coauthor','code','coder','coldness','color','comedian','comedy','comfort','command','comment','commuter','conceit','conduct','conquest','consent','constant','contempt','contrast','coolant','coolness','courage','courtesy','coziness','craft','craving','creation','creator','credence','creditor','creed','culture','curator','curtness','curves','customer','cuteness','cynicism','daftness','damage','dampness','dance','dancer','danger','darkness','data','dawdler','dawn','deadline','deanship','debility','deepness','defector','defender','defiance','delegacy','deletion','delicacy','delight','demands','demeanor','demotion','denial','density','dentist','descent','designer','desire','desires','despair','destiny','details','detector','devotion','dialogue','dictator','diction','dignity','dilatant','dilation','dilemma','dilution','dimness','director','direness','disciple','disdain','disgrace','disguise','dismay','display','dissent','distance','distrust','disunity','disuse','divinity','divisor','doctor','doctrine','document','donation','donator','donor','dopiness','dose','doubt','drabness','drama','dread','dreamer','drummer','dullness','duration','dusk','duties','duty','ease','easement','echoes','edginess','edition','editor','educator','eeriness','effect','effects','efficacy','effort','ejection','elation','elder','election','elector','elegance','elitist','embrace','eminence','emotion','emotions','empathy','emperor','emphasis','emulator','enabler','endeavor','enemy','energy','engineer','enormity','entrance','envy','equality','equation','equator','equity','error','eruption','escapist','essay','essayist','essence','estimate','eternity','euphuism','evenness','event','eviction','evidence','example','executor','explorer','exponent','exporter','exterior','facility','fact','faction','failure','fairness','faith','fallacy','fame','fancy','fandom','fascism','fascist','fastness','fatality','fate','fault','faults','favor','fear','fears','features','federacy','feeling','felicity','felinity','feminist','ferment','ferocity','fervor','festival','fiction','fidelity','fiefdom','fighter','figment','figure','filmdom','finalist','finality','fineness','firmness','fitness','fixation','flatness','flattery','flautist','flavor','flight','florist','fluidity','flutist','folly','fondness','force','forecast','form','formula','fortuity','foulness','foxiness','fraction','freedom','frenzy','friction','fruition','fullness','function','funeral','furor','futility','futurist','gait','gaze','genius','gestures','gist','gladness','glance','glibness','gloom','glory','glow','glumness','goodness','gossip','gossiper','governor','grace','grantor','grasp','gratuity','gravity','grayness','greeter','greeting','grimace','grimness','growth','guardian','guidance','guide','gumption','gyration','habits','handicap','hardness','hardship','haziness','health','height','helper','heredity','hilarity','hint','hipness','history','hobbyist','home','hominess','honor','hope','horde','horror','hotness','hugeness','humanity','humidity','humility','humor','humorist','iciness','idea','idealist','ideals','ideas','identity','idleness','illness','imagery','imitator','immunity','imposter','impostor','impulse','impunity','impurity','inaction','incident','inciter','infinity','informer','inhalant','insanity','insight','instance','instinct','intimacy','inventor','investor','irritant','isocracy','iterance','jailor','janitor','jargon','jealousy','joker','judgment','junction','junior','jurist','juror','justice','keenness','kindness','kingdom','kingship','kinship','ladyship','lament','language','lapse','lateness','laugh','laughter','laxness','laziness','learner','legacy','legality','levity','license','licensor','life','ligation','light','likeness','lineage','linguist','listener','literacy','litigant','loafer','lobbyist','location','locution','longing','look','looks','lordship','loudness','love','loyalist','loyalty','lucidity','lunacy','lushness','luster','luxury','lyricist','madness','magician','majority','malice','mammal','manager','mankind','manner','marketer','mastery','math','maturity','meaning','meanness','medalist','mediator','meekness','memory','mentor','merchant','merit','mess','metaphor','method','migrant','migrator','mildness','militant','mind','minor','minority','mirth','miser','misery','mistake','mobility','modality','mode','modesty','moment','monotone','monotony','mood','moralist','morality','morals','motion','motive','motorist','movement','moviedom','muralist','murmur','music','mutant','mutation','narrator','nasality','nation','nature','nearness','neatness','needs','negation','neglect','neighbor','newness','niceness','niceties','nihilism','nihilist','nobility','nonsense','nosiness','notation','notion','novelist','novelty','nuance','nuisance','numbness','numeracy','nutrient','obesity','observer','occupant','oddities','oddity','oddness','odor','offence','officer','oiliness','oldness','oneness','ooziness','opacity','opening','openness','operator','opinion','opponent','optimism','option','opulence','oration','orator','organist','outburst','outcry','outline','ovation','owner','pacifist','pageant','painter','paleness','papacy','parent','parity','parlance','parody','passion','pastor','pathos','patience','patient','payment','peasant','penance','period','pertness','petition','pianist','pinkness','piracy','pittance','pity','place','player','pleasure','plight','point','pokiness','polarity','politics','polluter','poorness','porosity','portion','position','posture','potion','power','praise','predator','presence','present','pretense','pride','primacy','primness','printer','priority','prisoner','privacy','problem','proctor','procurer','producer','program','progress','project','promise','promisor','promoter','proof','prophecy','prospect','protest','prowess','prowler','prudence','puniness','pureness','purist','purity','purpose','pursuer','pursuit','purveyor','quality','quantity','quest','question','quotient','radiance','rankness','rant','rapidity','rareness','rarity','rashness','ration','rawness','reaction','reader','realism','reality','realness','realtor','reason','rebuke','recess','recital','recluse','rectory','recycler','redness','referrer','regality','regard','regent','regret','relation','relative','relator','reliance','remark','remorse','renter','repartee','research','reserve','response','rest','result','retreat','reward','riches','richness','ridicule','rights','rigidity','ripeness','romance','rotation','rudeness','ruffian','rule','ruler','rumor','runner','sadness','safeness','sailor','salience','salinity','sameness','sanction','sanctity','saneness','sanity','sarcasm','satire','satirist','savant','savior','saying','scarcity','science','scope','scorn','scowl','scruples','scrutiny','sculptor','sealant','secret','section','security','sedation','sedition','segment','selector','seller','senator','senility','senior','sense','sentence','sequence','serenity','sergeant','series','servant','server','service','severity','sheen','shopper','sickness','silence','singer','size','skill','slander','slowness','smile','smugness','sneer','snugness','society','softness','solitude','solution','solvent','sophist','sorcerer','sorrow','soul','source','sourness','space','speaker','speech','speller','spirit','splendor','sponsor','spring','squalor','stance','star','stardom','stare','state','station','stature','step','stimulus','stoic','stoicism','story','strategy','strength','stress','stressor','student','style','stylist','success','suction','suitor','sunlight','superior','supplier','supply','sureness','surface','surprise','survey','surveyor','survivor','swimmer','symbol','sympathy','symptoms','tact','tailor','tale','talent','talk','tallness','tameness','tangent','tartness','task','taste','taxation','teacher','teenager','temper','tenacity','tenancy','tenant','tendency','tension','tenure','term','terms','terror','thanks','theorist','theory','thespian','thinness','thought','thoughts','thrill','thriller','throng','tidiness','time','times','timidity','tininess','tonality','tone','torment','totality','touch','tour','tourism','tourist','township','toxicity','traction','tragedy','trainer','trait','traitor','trance','tribute','trick','trimness','trinity','triumph','truce','trucker','trueness','truth','tuition','type','types','typist','tyranny','unifier','union','unity','utility','vacation','vainness','valerian','validity','valor','value','values','vanity','vapor','variant','variety','vastness','velocity','vendor','veracity','verdict','vexation','vicinity','victor','victory','view','views','vigor','vileness','violence','virtue','virtues','vision','visitor','vitality','vocation','voice','volition','voracity','wail','wait','wanderer','warfare','wariness','warmness','warmth','warning','warranty','warrior','waste','waviness','weakness','weather','wellness','wetness','whim','wildness','wisdom','wonder','word','worker','wrath','writer','yearning','years','youth','zaniness','zeal','zest'],
 _clickMap: {
 	'w_modal':_    => $GUI.modal(_.x),
-	'w_keyboard':_ => $DAT.key(_.x)
+	'w_keyboard':_ => $GUI.key(_.x),
+	'w_follow':_   => $GUI.follow()
 },
 
 /*************************************************************************************************\
@@ -75,45 +76,51 @@ EVT: {
 	keydown: e => {
 		const key=(e&&e.key&&!e.ctrlKey&&!e.altKey&&!e.metaKey?e.key.toLowerCase():'');
 		if(!$GUI.BUSY && $K(key))
-			$DAT.key(key);
+			$GUI.key(key);
 	}
 },
 
 /*************************************************************************************************\
 \*******  DATA / STATE LOGIC  ***********************************************  [ $DAT.* ]  *******/
 DAT: {
-	GAME:0, GAME_MAX:0, PLAYER_ID:'', PLAYER_NAME:'', WORD:'', WORDS:'', MASKS:'', IDX:0,
+	GAME:0, GAME_MAX:0, PLAYER_ID:'', PLAYER_NAME:'', WORD:'', WORDS:'', MASKS:'', IDX:0, FOLLOW:null,
 	setup: () => {
+		if($M(/^#([0-9]+)/, location.hash)) {
+			if(_M[1] != $DB.get('game')) {
+				$GUI.clear();
+				$DAT.setGame(_M[1]);
+			}
+		}
 		$DAT.setGame($DB.get('game')||0)
-		$DAT.GAME = $DB.get('game')||0;
 		$DAT.WORDS = $DB.get('words') || '';
 		$DAT.MASKS = $DB.get('masks') || '';
 		$DAT.WORD = '';
 		$DAT.IDX = $DAT.WORDS.length;
 	},
 
-	clear: () => {
+	clear: setGame => {
 		$GUI.busy(false);
-		$DAT.setGame($DAT.GAME_MAX);
+		$DAT.setGame(setGame?setGame:$DAT.GAME_MAX);
 		$DB.set('words', $DAT.WORDS='');
 		$DB.set('masks', $DAT.MASKS='');
 		$DAT.WORD = '';
 		$DAT.IDX = 0;
-		$DAT.key('');
+		$GUI.key('');
+		$GUI.update();
 	},
 	setPlayer: id => {
 		$DAT.PLAYER_ID = id;
 		$DAT.PLAYER_NAME = $playerIdToName(id);
-		$V('w_player', $DAT.PLAYER_NAME);
+		$GUI.update();
 	},
 	setGame: game => {
 		$DAT.GAME = parseInt(location.hash=game);
 		$DB.set('game', $DAT.GAME);
-		$V('w_game', $DAT.GAME);
+		$GUI.update();
 	},
 	setGameMax: (max,inc) => {
 		$DAT.GAME_MAX = parseInt(max) + (inc?inc:0);
-		$V('w_game_max', $DAT.GAME_MAX);
+		$GUI.update();
 	},
 	guess: word => {
 		if(!$isValidWord(word))
@@ -130,10 +137,55 @@ DAT: {
 		$DAT.WORD = '';
 		$GUI.reveal(500);
 	},
+},
+
+/*************************************************************************************************\
+\*******  GUI & GENERAL VIEW LOGIC  *****************************************  [ $GUI.* ]  *******/
+GUI: {
+	BUSY:false, IDX: 0,
+	setup: () => { },
+
+	alert: (text) => $GUI.confirm(text),
+	confirm: (text, func, yesText, noText) => {
+		$V('w_modal_y', yesText ? yesText : 'Yes');
+		$V('w_modal_n', noText ? noText : 'No');
+		$E('w_modal').className='w_modal_'+(($GUI.MODAL=func)?'yn':'ok');
+		$GUI.reset(_E, 'w_fade_in 0.5s ease forwards');
+		$V('w_modal_text', $H(text).replace(/\n/g,'<br />'));
+	},
+	modal: answer => {
+		if(!answer)
+			return;
+		$GUI.reset('w_modal', 'w_fade_out 0.25s ease forwards');
+		if($GUI.MODAL && answer=='yes')
+			$GUI.MODAL();
+		else
+			$GUI.MODAL = null;
+	},
+	busy: active => $GUI.BUSY=!!($E('w_keyboard').className = active ? 'w_disabled': ''),
+	clear: setGame => ($GUI.IDX=0) || $A('i').forEach(x => x.innerText=x.className=x.style='') || $A('#w_keyboard > div > b').forEach(x => x.className=x.style='') || $DAT.clear(setGame),
+	error: (msg, secs) => $V('w_error', $H(msg)) && $GUI.reset(_V, `w_error ${secs?secs:5}s normal forwards`),
+	reset: (idOrElement, animation) => {
+		const el=(typeof idOrElement=='string'?$E(idOrElement):idOrElement), ani=(animation?animation:$W.getComputedStyle(el).animation);
+		if(!el)
+			return(false);
+		el.style.animation = 'none';
+		void el.offsetHeight;
+		el.style.animation = ani;
+		return(true);
+	},
+	follow: () => {
+		$GUI.clear($DAT.GAME_MAX);
+		$DAT.FOLLOW = true;
+	},
+	bubble: msg => {
+		let html=$H(msg).replace(/\[([a-z])([a-z])?\]/ig,'<b class="w_$1">$2</b>').replace(/\>\</g,'>&nbsp;<');
+		$E('w_bubble').innerHTML = html;
+		$GUI.reset('w_bubble', 'w_bubble 5s normal forwards');
+	},
 	key: key => {
 		if(!$T('I') || $GUI.BUSY)
 			return;
-
 		let noKey=false;
 		if(key.length==1 && $DAT.WORD.length < 5 && $DAT.IDX < 30) {
 			$DAT.WORD += key;
@@ -159,46 +211,6 @@ DAT: {
 			_K.classList[$isValidWord($DAT.WORD)?'remove':'add']('w_disabled');
 		if($K('backspace'))
 			_K.classList[$DAT.WORD.length?'remove':'add']('w_disabled');
-	}
-},
-
-/*************************************************************************************************\
-\*******  GUI & GENERAL VIEW LOGIC  *****************************************  [ $GUI.* ]  *******/
-GUI: {
-	BUSY:false, IDX: 0,
-	setup: () => { },
-
-	alert: (text) => $GUI.confirm(text),
-	confirm: (text, func) => {
-		$E('w_modal').className='w_modal_'+(($GUI.MODAL=func)?'yn':'ok');
-		$GUI.reset(_E, 'w_fade_in 0.5s ease forwards');
-		$V('w_modal_text', $H(text).replace(/\n/g,'<br />'));
-	},
-	modal: answer => {
-		if(!answer)
-			return;
-		$GUI.reset('w_modal', 'w_fade_out 0.25s ease forwards');
-		if($GUI.MODAL && answer=='yes')
-			$GUI.MODAL();
-		else
-			$GUI.MODAL = null;
-	},
-	busy: active => $GUI.BUSY=!!($E('w_keyboard').className = active ? 'w_disabled': ''),
-	clear: () => ($GUI.IDX=0) || $A('i').forEach(x => x.innerText=x.className=x.style='') || $A('#w_keyboard > div > b').forEach(x => x.className=x.style='') || $DAT.clear(),
-	error: (msg, secs) => $V('w_error', $H(msg)) && $GUI.reset(_V, `w_error ${secs?secs:5}s normal forwards`),
-	reset: (idOrElement, animation) => {
-		const el=(typeof idOrElement=='string'?$E(idOrElement):idOrElement), ani=(animation?animation:$W.getComputedStyle(el).animation);
-		if(!el)
-			return(false);
-		el.style.animation = 'none';
-		void el.offsetHeight;
-		el.style.animation = ani;
-		return(true);
-	},
-	bubble: msg => {
-		let html=$H(msg).replace(/\[([a-z])([a-z])?\]/ig,'<b class="w_$1">$2</b>').replace(/\>\</g,'>&nbsp;<');
-		$E('w_bubble').innerHTML = html;
-		$GUI.reset('w_bubble', 'w_bubble 5s normal forwards');
 	},
 	reveal: ms => {
 		if($GUI.IDX >= $DAT.WORDS.length)
@@ -222,6 +234,16 @@ GUI: {
 				setTimeout(() => $GUI.IDX >= 30 ? ($GUI.clear() || $GUI.busy(false)) : null, 60000);
 			}
 		}, ms/2);
+	},
+	nextGame: (msg, setGame) => {
+		$GUI.busy(false);
+		$GUI.bubble(msg);
+		$GUI.clear(setGame);
+	},
+	update: () => {
+		$V('w_player', $DAT.PLAYER_NAME ? $DAT.PLAYER_NAME : '(not connected)');
+		$V('w_game', $DAT.GAME_MAX>$DAT.GAME ? `${$DAT.GAME}/${$DAT.GAME_MAX}` : $DAT.GAME);
+		$E('w_follow').style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : 'none';
 	}
 },
 
@@ -248,7 +270,7 @@ NET: {
 		$GUI.busy(false);
 		$NET.connected = true;
 		console.log("$WS.open()");
-		$NET.WS.send('0');
+		$NET.WS.send($DAT.GAME);
 	},
 	close: e => {
 		$NET.connected = false;
@@ -268,18 +290,22 @@ NET: {
 			console.log("$WS.write():" + data + ' (not connected)');
 	},
 	read: e => {
-console.log("$WS.read():", e.data);
+		console.log("$WS.read():", e.data);
 		const args=e.data.split('|');
 		switch(args[0]) {
 			case 'I':
 				$DAT.setGameMax(args[1]);
 				$DAT.setPlayer(args[2]);
-				if(!$DAT.GAME || $DAT.GAME != args[1] || !$DAT.IDX) {
+				if(!$DAT.GAME || !$DAT.IDX) {
 					$GUI.clear();
-					$DAT.setGame(args[1]);
+					$DAT.setGame(args[3]||args[1]);
 				}
 				else
 					$GUI.reveal(100);
+				if(args[3] && args[3] < args[1] && $DAT.FOLLOW === null)
+					$DAT.FOLLOW = false;
+				if(args[4])
+					$GUI.bubble($playerIdToName(args[4])+' won game #'+args[3]);
 				break;
 			case 'E':
 				$GUI.error(args[1]);
@@ -295,13 +321,29 @@ console.log("$WS.read():", e.data);
 			case 'M':
 				if(args[2]==$DAT.PLAYER_ID)
 					$DAT.guessResponse(args[1], args[3]);
-				$GUI.bubble($playerIdToName(args[2]) + ' ' + args[3].split('').map(x=>'['+x.toLowerCase()+']').join('') + (args[4]?" \ufe5f" +args[4]:'') );
+				else if(args[1] == $DAT.GAME)
+					$GUI.bubble($playerIdToName(args[2]) + ' ' + args[3].split('').map(x=>'['+x.toLowerCase()+']').join('') + (args[4]?" \ufe5f" +args[4]:'') );
 				break;
 			case 'W':
-				$GUI.busy(false);
-				$DAT.setGameMax(args[1], 1);
-				$GUI.bubble($playerIdToName(args[2]) + ' Won #'+args[1]+'! ' + args[3].split('').map(x => '[g'+x.toUpperCase()+']').join('') );
-				$GUI.clear();
+				const msg = (args[2]==$DAT.PLAYER_ID?'You':$playerIdToName(args[2])) + ' '+($DAT.GAME==$DAT.GAME_MAX?'Won':'Finished')+' #'+args[1]+'! ' + args[3].split('').map(x => '[g'+x.toUpperCase()+']').join('');
+				if(args[1]>=$DAT.GAME_MAX)
+					$DAT.setGameMax(args[1], 1);
+				if(args[1]!=$DAT.GAME && args[2]==$DAT.PLAYER_ID)
+					break;
+				if(args[2]==$DAT.PLAYER_ID) {
+					if(typeof confetti == 'function')
+						confetti({particleCount:150});
+					$GUI.nextGame(msg, $DAT.GAME+1);
+				}
+				else if($DAT.FOLLOW === null) {
+					$DAT.FOLLOW = false;
+					$GUI.confirm($playerIdToName(args[2]) + ' won, keep following the newest game or go at your pace?', () => {
+						$DAT.FOLLOW = true;
+						$GUI.nextGame(msg);
+					}, 'Follow' , 'Stay');
+				}
+				else if($DAT.FOLLOW)
+					$GUI.nextGame(msg, $DAT.GAME+1);
 				break;
 		}
 	}
