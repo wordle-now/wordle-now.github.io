@@ -105,6 +105,44 @@ html, body {
 	height: 100dvh;
 	position: relative;
 }
+#w_modal {
+	visibility: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 9;
+	transition: 0.5s;
+}
+#w_modal > div {
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: rgba(0,0,0,0.4) 0px 2px 4px, rgba(0,0,0,0.3) 0px 7px 13px -3px, rgba(0,0,0,0.2) 0px -3px 0px inset, rgba(0,0,0,0.2) 4px 4px, rgba(0,0,0,0.1) 8px 8px, rgba(0,0,0,0.05) 12px 12px;
+	border: max(0.2vw, 3px) solid #222;
+}
+#w_modal span {
+	display: block;
+	font-size: max(1.15vw, 1em);
+	color: #222;
+	text-align: center;
+	padding: max(0.6vw, 10px);
+}
+#w_modal_yn, #w_modal_ok { display: none !important; }
+.w_modal_yn #w_modal_yn, .w_modal_ok #w_modal_ok { display: block !important; }
+#w_modal input {
+	font-size: max(1.15vw, 1em);
+	margin: 0.25vw 0.5vw 0.25vw 0.5vw;
+	padding: 0.25vw 0.5vw 0.25vw 0.5vw;
+	width: max(4vw, 50px);
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #ddd;
+	transition: 0.15s;
+}
 #w_error {
 	position: fixed;
 	top: 0;

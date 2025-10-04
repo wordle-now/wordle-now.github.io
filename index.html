@@ -5,19 +5,24 @@ __ __ _____ _ _ __/`|'\___   _ _  _____ __ __
 <html lang="en">
  <head>
   <title>Wordle.NOW!</title>
-  <meta charset="UTF-8" /> 
-  <meta name="description" content="A multiplayer real-time wordle game" />
-  <meta name="keywords" content="wordle,now,multiplayer" />
-  <meta name="url" content="https://wordle.now" />
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width" />
-  <link rel="icon" type="image/svg+xml" sizes="any" href="/wordle.svg" />
-  <link rel="apple-touch-icon" sizes="512x512" href="/wordle.svg" />
-  <link rel="canonical" href="https://wordle.now" />
-  <link rel="stylesheet" type="text/css" href="/wordle.css" />
+  <meta charset="UTF-8"> 
+  <meta name="description" content="A multiplayer real-time wordle game">
+  <meta name="keywords" content="wordle,now,multiplayer">
+  <meta name="url" content="https://wordle.now">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/wordle.svg">
+  <link rel="apple-touch-icon" sizes="512x512" href="/wordle.svg">
+  <link rel="canonical" href="https://wordle.now">
+  <link rel="stylesheet" type="text/css" href="/wordle.css">
   <script src="/wordle.js"></script>
  </head>
  <body onload="$W.LOAD()">
   <div id="w_body">
+   <div id="w_modal"><div>
+    <span id="w_modal_text"></span>
+    <span id="w_modal_yn"><input type="button" value="Yes" data-x="yes"><input type="button" value="No" data-x="no"></span>
+    <span id="w_modal_ok"><input type="button" value="Ok" data-x="ok"></span>
+   </div></div>
    <div id="w_error"></div>
    <div id="w_status">#<span id="w_game">0</span>/<span id="w_game_max">0</span>:&nbsp;<span id="w_player">(not connected)</span></div>
    <div id="w_rows">
