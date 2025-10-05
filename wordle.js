@@ -9,7 +9,7 @@ _nouns: ['abductor','ability','absence','abutment','abyss','acceptor','access','
 _clickMap: {
 	'w_modal':_    => $GUI.modal(_.x),
 	'w_keyboard':_ => $GUI.key(_.x),
-	'w_follow':_   => $GUI.follow()
+	'w_load':_     => $GUI.load(_.x)
 },
 
 /*************************************************************************************************\
@@ -180,9 +180,23 @@ GUI: {
 		el.style.animation = ani;
 		return(true);
 	},
-	follow: () => {
-		$GUI.clear($DAT.GAME_MAX);
+	retry: clicked => {
+		if(clicked) {
+			$GUI.clear($DAT.GAME);
+			$E('w_load').className = '';
+			_E.style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : '';
+		}
+		else {
+			$E('w_load').className = 'w_retry';
+			_E.style.display = 'block';
+		}
+	},
+	load: type => {
+		$E('w_load').className = '';
+		if(type && type == 'retry')
+			return($GUI.clear($DAT.GAME));
 		$DAT.FOLLOW = true;
+		$GUI.clear($DAT.GAME_MAX);
 	},
 	bubble: msg => {
 		let html=$H(msg).replace(/\[([a-z])([a-z])?\]/ig,'<b class="w_$1">$2</b>').replace(/\>\</g,'>&nbsp;<');
@@ -236,8 +250,8 @@ GUI: {
 				k.className = 'w_'+m;
 			t.className = 'w_'+m;
 			if(++$GUI.IDX >= 30) {
-				$GUI.bubble('Shucks, Wait 1 minute to try again...');
-				setTimeout(() => $GUI.IDX >= 30 ? ($GUI.clear() || $GUI.busy(false)) : null, 60000);
+				$GUI.bubble('Shucks, Wait a minute to try again...');
+				setTimeout(() => $GUI.IDX >= 30 ? $GUI.retry() : null, 30000);
 			}
 		}, ms/2);
 	},
@@ -249,7 +263,8 @@ GUI: {
 	update: () => {
 		$V('w_player', $DAT.PLAYER_NAME ? $DAT.PLAYER_NAME : '(not connected)');
 		$V('w_game', $DAT.GAME_MAX>$DAT.GAME ? `${$DAT.GAME}/${$DAT.GAME_MAX}` : $DAT.GAME);
-		$E('w_follow').style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : 'none';
+		if(!$E('w_load').className)
+			_E.style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : 'none';
 	}
 },
 
