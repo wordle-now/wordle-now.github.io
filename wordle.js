@@ -325,8 +325,12 @@ NET: {
 					$GUI.reveal(100);
 				if(args[3] && args[3] < args[1] && $DAT.FOLLOW === null)
 					$DAT.FOLLOW = false;
-				if(args[4])
+				if(args[4] && args[3]==$DAT.GAME)
 					$GUI.bubble($playerIdToName(args[4])+' won game #'+args[3]);
+				break;
+			case 'J':
+				if(args[1]==$DAT.GAME)
+					$GUI.bubble($playerIdToName(args[2])+' joined game #'+args[1]);
 				break;
 			case 'E':
 				$GUI.error(args[1]);
