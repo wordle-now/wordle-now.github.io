@@ -121,6 +121,8 @@ DAT: {
 	},
 	setGame: game => {
 		$DAT.GAME = parseInt(location.hash=game);
+		if($DAT.GAME_MAX == $DAT.GAME)
+			history.replaceState(null,'','/');
 		$DB.set('game', $DAT.GAME);
 		$GUI.update();
 	},
