@@ -88,7 +88,8 @@ EVT: {
 			return;
 		$DAT.clear(_M[1]);
 		$NET.write(_M[1]);
-	}
+	},
+	visibilitychange: e => document.visibilityState==='visible' ? setTimeout($NET.connect, 5000) : $NET.write('P'),
 },
 
 /*************************************************************************************************\
@@ -287,12 +288,16 @@ NET: {
 	setup: () => $NET.connect(),
 
 	connect: () => {
+		if($NET.WS) {
+			if($NET.WS.readyState == WebSocket.OPEN)
+				return($NET.connected=true);
+			$NET.WS.close();
+		}
 		$GUI.busy(true);
 		let ts=$DB.get('ts');
 		if(!ts)
 			$DB.set('ts', (ts=Date.now()));
-		if($NET.WS && $NET.connected)
-			$NET.WS.close();
+		$NET.connected = false;
 		$NET.WS = new WebSocket('wss://api.wordle.now/ws?ts='+ts);
 		$NET.WS.onopen = $NET.open;
 		$NET.WS.onmessage = $NET.read;
@@ -306,7 +311,7 @@ NET: {
 		$NET.WS.send($DAT.GAME);
 	},
 	close: e => {
-		$NET.connected = false;
+		$NET.WS = $NET.connected = false;
 		$GUI.busy(true);
 		console.log("$WS.close()", e.code, e.reason, e.wasClean);
 		setTimeout($NET.connect, 2000);
