@@ -349,7 +349,7 @@ NET: {
 				$GUI.busy(false);
 				break;
 			case 'P':
-				$GUI.busy(false);
+				$NET.write('P');
 				break;
 			case 'N':
 				$GUI.error('Empty response from server');
