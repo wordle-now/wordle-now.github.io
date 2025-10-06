@@ -89,7 +89,7 @@ EVT: {
 		$DAT.clear(_M[1]);
 		$NET.write(_M[1]);
 	},
-	visibilitychange: e => document.visibilityState==='visible' ? setTimeout($NET.connect, 5000) : $NET.write('P'),
+	visibilitychange: e => $NET.write('P'),
 },
 
 /*************************************************************************************************\
@@ -288,11 +288,8 @@ NET: {
 	setup: () => $NET.connect(),
 
 	connect: () => {
-		if($NET.WS) {
-			if($NET.WS.readyState == WebSocket.OPEN)
-				return($NET.connected=true);
-			$NET.WS.close();
-		}
+		if($NET.WS)
+			return($NET.write('P'));
 		$GUI.busy(true);
 		let ts=$DB.get('ts');
 		if(!ts)
@@ -318,6 +315,9 @@ NET: {
 	},
 	error: message => {
 		console.log("$WS.error()", message);
+		if($NET.WS)
+			$NET.WS.close();
+		$NET.WS = $NET.connected = false;
 	},
 	write: data => {
 		if($NET.connected && $NET.WS) {
