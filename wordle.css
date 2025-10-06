@@ -2,12 +2,41 @@
 \ \ /\ / / _ \| '__/ _` | |/ _ \ | '_ \ / _ \ \ /\ / /       
  \ V  V / (_) | | | (_| | |  __/_| | | | (_) \ V  V /   Chris Shoup <chris@shoup.org>
   \_/\_/ \___/|_|  \__,_|_|\___(_)_| |_|\___/ \_/\*/
+:root {
+	--wn-color-bg: #ffffff;
+	--wn-color-fg: #13141c;
+	--wn-color-1: #414a5e;
+	--wn-color-2: #dee1e9;
+	--wn-color-3: #fbfcff;
+	--wn-color-4: #dce1ed;
+	--wn-color-5: #a7adc0;
+	--wn-color-6: #a4aec4;
+	--wn-color-7: #79b851;
+	--wn-color-8: #f3c237;
+	--wn-color-9: #fbfcff;
+	--wn-color-10: #f4f8ff;
+
+}
+:root[data-theme="w_dark"] {
+	--wn-color-bg: #13141c;
+	--wn-color-fg: #ffffff;
+	--wn-color-1: #fbfcff;
+	--wn-color-2: #414458;
+	--wn-color-3: #191a24;
+	--wn-color-4: #656780;
+	--wn-color-5: #7b7f98;
+	--wn-color-6: #3d4054;
+	--wn-color-7: #659c43;
+	--wn-color-8: #c29a2b;
+	--wn-color-9: #fbfcff;
+	--wn-color-10: #3e3f4f;
+}
 @keyframes w_letter_typed {
 	0% {
 		margin: min(0.5dvh,1dvw);
 		padding: 0;
 		font-size: min(1dvh,5dvw);
-		border-color: #dee1e9;
+		border-color: var(--wn-color-2);
 	}
 	80% {
 		margin: 0;
@@ -18,7 +47,7 @@
 		margin: min(0.5dvh,1dvw);
 		padding: 0;
 		font-size: min(5dvh,10dvw);
-		border-color: #a7adc0;
+		border-color: var(--wn-color-5);
 	}
 }
 @keyframes w_letter_untyped {
@@ -26,7 +55,7 @@
 		margin: min(0.5dvh,1dvw);
 		padding: 0;
 		font-size: 5dvh;
-		border-color: #a7adc0;
+		border-color: var(--wn-color-5);
 	}
 	20% {
 		margin: 0;
@@ -37,7 +66,7 @@
 		margin: min(0.5dvh,1dvw);
 		padding: 0;
 		font-size: min(1dvh,5dvw);
-		border-color: #dee1e9;
+		border-color: var(--wn-color-2);
 	}
 }
 @keyframes w_letter_flip {
@@ -96,6 +125,8 @@ html, body {
 	font-family: "Montserrat","Open Sans",sans-serif;
 	user-select: none;
 	-webkit-user-select: none;
+	background-color: var(--wn-color-bg);
+	color: var(--wn-color-fg);
 }
 #w_body {
 	margin: auto;
@@ -105,18 +136,42 @@ html, body {
 	height: 100dvh;
 	position: relative;
 }
+#w_theme {
+	z-index: 2;
+	position: fixed;
+	top: 2.5dvmin;
+	right: 2.5dvmin;
+	height: 4dvmin;
+	width: 4dvmin;
+	background-color: var(--wn-color-2);
+	color: var(--wn-color-1);
+	padding: 1dvmin;
+	border-radius: 1dvmin;
+	user-select: none;
+	-webkit-user-select: none;
+}
+#w_theme svg {
+	display: block;
+	height: 100%;
+	width: 100%;
+	user-select: none;
+	-webkit-user-select: none;
+}
+body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child {
+	display: none;
+}
 #w_modal {
 	visibility: hidden;
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	color: #fff;
+	color: var(--wn-color-1);
 	background-color: rgba(0,0,0,0.65);
 	z-index: 9;
 	transition: 0.5s;
 }
 #w_modal > div {
-	background-color: #f5f8ff;
+	background-color: var(--wn-color-3);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -127,7 +182,6 @@ html, body {
 #w_modal span {
 	display: block;
 	font-size: max(1.15vw, 1em);
-	color: #222;
 	text-align: center;
 	padding: max(0.6vw, 10px);
 }
@@ -139,9 +193,9 @@ html, body {
 	padding: 0.5vw 1vw 0.5vw 1vw;
 	font-weight: bold;
 	cursor: pointer;
-	background-color: #dce1ed;
-	border-color: #414a5e;
-	color: #414a5e;
+	background-color: var(--wn-color-4);
+	border-color: var(--wn-color-1);
+	color: var(--wn-color-1);
 	transition: 0.15s;
 }
 #w_error {
@@ -167,7 +221,7 @@ html, body {
 	height: 10dvh;
 	width: 100%;
 	overflow: hidden;
-	color: #414a5e;
+	color: var(--wn-color-1);
 	font-weight: bold;
 	font-size: 5dvmin;
 	display: flex;
@@ -195,27 +249,27 @@ html, body {
 	margin: min(0.5dvh,1dvw);
 	font-size: min(5dvh,10dvw);
 	text-align: center;
-	background-color: #fbfcff;
-	color: #393e4c;
-	border: 2px solid #dee1e9;
+	background-color: var(--wn-color-3);
+	color: var(--wn-color-1);
+	border: 2px solid var(--wn-color-2);
 	border-radius: 4px;
 	user-select: none;
 	-webkit-user-select: none;
 }
-.w_y {
-	background-color: #f3c237 !important;
-	border-color: #f3c237 !important;
-	color: #fff !important;
+.w_x {
+	background-color: var(--wn-color-6) !important;
+	border-color: var(--wn-color-6) !important;
+	color: var(--wn-color-9) !important;
 }
 .w_g {
-	background-color: #79b851 !important;
-	border-color: #79b851 !important;
-	color: #fff !important;
+	background-color: var(--wn-color-7) !important;
+	border-color: var(--wn-color-7) !important;
+	color: var(--wn-color-9) !important;
 }
-.w_x {
-	background-color: #a4aec4 !important;
-	border-color: #a4aec4 !important;
-	color: #fff !important;
+.w_y {
+	background-color: var(--wn-color-8) !important;
+	border-color: var(--wn-color-8) !important;
+	color: var(--wn-color-9) !important;
 }
 #w_load {
 	display: block;
@@ -224,15 +278,14 @@ html, body {
 	left: 50%;
 	transform: translateX(-50%);
 	top: -5dvh;
-	color: #414a5e;
+	color: var(--wn-color-1);
 	font-variant: small-caps; 
 	font-size: max(3dvmin, 3dvh) !important;
 	font-weight: bold;
 	white-space: nowrap;
 	display: none;
 }
-#w_load:not(.w_retry) > span:last-child { display: none; }
-#w_load.w_retry > span:first-child { display: none; }
+#w_load:not(.w_retry) > span:last-child, #w_load.w_retry > span:first-child { display: none; }
 #w_load > span > span { text-decoration: underline; }
 #w_bubble {
 	z-index: 1;
@@ -240,14 +293,14 @@ html, body {
 	top: -8dvh;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: #f4f8ff;
-	border: 4px solid #414a5e;
+	background-color: var(--wn-color-10);
+	border: 4px solid var(--wn-color-1);
 	border-radius: 10dvmax;
 	text-align: center;
 	padding: 1dvmin 2dvmin 1dvmin 2dvmin;
 	font-size: 3dvmin;
 	font-weight: 800;
-	color: #414a5e;
+	color: var(--wn-color-1);
 	font-family: arial;
 	opacity: 0;
 	white-space: nowrap;
@@ -258,7 +311,7 @@ html, body {
 	height: 4dvmin;
 	width: 4dvmin;
 	font-size: 3dvmin;
-	color: #414a5e;
+	color: var(--wn-color-1);
 	border-radius: 4px;
 	pointer: normal !important;
 	opacity: 1 !important;
@@ -270,7 +323,7 @@ html, body {
 	position: absolute;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 10px solid #414a5e;
+	border-top: 10px solid var(--wn-color-1);
 	border-bottom: 10px solid transparent;
 	right: 50%;
 	bottom: -23px;
@@ -282,7 +335,7 @@ html, body {
 	position: absolute;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 10px solid #f4f8ff;
+	border-top: 10px solid var(--wn-color-10);
 	border-bottom: 10px solid transparent;
 	right: 50%;
 	bottom: -18px;
@@ -312,8 +365,8 @@ html, body {
 	height: 100%;
 	text-align: center;
 	font-size: 4dvmin;
-	background-color: #dce1ed;
-	color: #414a5e;
+	background-color: var(--wn-color-4);
+	color: var(--wn-color-1);
 	border-radius: 4px;
 	margin: 0.5dvmin;
 	transition: 0.2s;
@@ -330,7 +383,7 @@ html, body {
 	opacity: 0.5;
 }
 @media (hover: hover) and (pointer: fine) {
-	#w_keyboard b:not(.w_disabled):hover, #w_load > span:hover {
+	#w_keyboard b:not(.w_disabled):hover, #w_load > span:hover, #w_theme:hover {
 		opacity: 0.8;
 		cursor: pointer;
 	}

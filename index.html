@@ -9,6 +9,7 @@ __ __ _____ _ _ __/`|'\___   _ _  _____ __ __
   <meta name="description" content="A multiplayer real-time wordle game">
   <meta name="keywords" content="wordle,now,multiplayer">
   <meta name="url" content="https://wordle.now">
+  <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
   <link rel="icon" type="image/svg+xml" sizes="any" href="/wordle.svg">
   <link rel="apple-touch-icon" sizes="512x512" href="/wordle.svg">
@@ -19,6 +20,10 @@ __ __ _____ _ _ __/`|'\___   _ _  _____ __ __
  </head>
  <body onload="$WN.LOAD()">
   <div id="w_body">
+   <div id="w_theme">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+   </div>
    <div id="w_modal"><div>
     <span id="w_modal_text"></span>
     <span id="w_modal_yn"><input type="button" id="w_modal_y" value="Yes" data-x="yes"><input type="button" id="w_modal_n" value="No" data-x="no"></span>

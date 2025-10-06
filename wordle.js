@@ -9,7 +9,8 @@ _nouns: ['abductor','ability','absence','abutment','abyss','acceptor','access','
 _clickMap: {
 	'w_modal':_    => $GUI.modal(_.x),
 	'w_keyboard':_ => $GUI.key(_.x),
-	'w_load':_     => $GUI.load(_.x)
+	'w_load':_     => $GUI.load(_.x),
+	'w_theme':_    => $GUI.dark()
 },
 
 /*************************************************************************************************\
@@ -151,7 +152,7 @@ DAT: {
 \*******  GUI & GENERAL VIEW LOGIC  *****************************************  [ $GUI.* ]  *******/
 GUI: {
 	BUSY:false, IDX: 0,
-	setup: () => { },
+	setup: () => $GUI.dark($DB.get('theme')=='w_dark'),
 
 	alert: (text) => $GUI.confirm(text),
 	confirm: (text, func, yesText, noText) => {
@@ -267,6 +268,15 @@ GUI: {
 		$V('w_game', $DAT.GAME_MAX>$DAT.GAME ? `${$DAT.GAME}/${$DAT.GAME_MAX}` : $DAT.GAME);
 		if(!$E('w_load').className)
 			_E.style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : 'none';
+	},
+	dark: explicit => {
+		if(typeof explicit == 'boolean')
+			$D.body.className = $D.documentElement.dataset.theme = (explicit?'w_dark':'');
+		else
+			$D.body.className = $D.documentElement.dataset.theme = ($D.body.className=='w_dark'?'':'w_dark');
+		$DB.set('theme', $D.body.className);
+		if($Q('meta[name="theme-color"]'))
+			_Q.setAttribute('content', getComputedStyle($D.documentElement).getPropertyValue('--wn-color-bg'));
 	}
 },
 
