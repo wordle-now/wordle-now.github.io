@@ -255,7 +255,7 @@ GUI: {
 				k.className = 'w_'+m;
 			t.className = 'w_'+m;
 			if(++$GUI.IDX >= 30) {
-				$GUI.bubble('Shucks, Wait a minute to try again...');
+				$GUI.bubble($R(['Biscuits','Bananas','Bratwurst','Barnacles','Butterbeans','Boogers'])+'! Wait a minute to try again...');
 				setTimeout(() => $GUI.IDX >= 30 ? $GUI.retry() : null, 30000);
 			}
 		}, ms/2);
