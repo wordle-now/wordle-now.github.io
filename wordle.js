@@ -87,6 +87,8 @@ EVT: {
 	hashchange: e => {
 		if(!$M(/^#([0-9]+)/, location.hash) || _M[1] == $DB.get('game'))
 			return;
+		else if(_M[1] >= $DAT.GAME_MAX)
+			history.replaceState(null,'','/');
 		$DAT.clear(_M[1]);
 		$NET.write(_M[1]);
 	},
@@ -124,7 +126,7 @@ DAT: {
 	},
 	setGame: game => {
 		$DAT.GAME = parseInt(location.hash=game);
-		if($DAT.GAME_MAX == $DAT.GAME)
+		if($DAT.GAME >= $DAT.GAME_MAX)
 			history.replaceState(null,'','/');
 		$DB.set('game', $DAT.GAME);
 		$GUI.update();
