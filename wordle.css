@@ -136,7 +136,7 @@ html, body {
 	height: 100dvh;
 	position: relative;
 }
-#w_jump, #w_theme {
+#w_join, #w_theme {
 	z-index: 2;
 	position: fixed;
 	top: 2.5dvmin;
@@ -153,7 +153,7 @@ html, body {
 	user-select: none;
 	-webkit-user-select: none;
 }
-#w_jump { left: 2.5dvmin; }
+#w_join { left: 2.5dvmin; }
 #w_theme { right: 2.5dvmin; }
 #w_theme svg {
 	display: block;
@@ -388,7 +388,7 @@ body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child 
 	opacity: 0.5;
 }
 @media (hover: hover) and (pointer: fine) {
-	#w_keyboard b:not(.w_disabled):hover, #w_load > span:hover, #w_jump:hover, #w_theme:hover {
+	#w_keyboard b:not(.w_disabled):hover, #w_load > span:hover, #w_join:hover, #w_theme:hover {
 		opacity: 0.8;
 		cursor: pointer;
 	}

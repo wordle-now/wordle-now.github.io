@@ -10,7 +10,7 @@ _clickMap: {
 	'w_modal':_    => $GUI.modal(_.x),
 	'w_keyboard':_ => $GUI.key(_.x),
 	'w_load':_     => $GUI.load(_.x),
-	'w_jump':_     => $GUI.jump(),
+	'w_join':_     => $GUI.join(),
 	'w_theme':_    => $GUI.dark()
 },
 
@@ -280,7 +280,7 @@ GUI: {
 		if($Q('meta[name="theme-color"]'))
 			_Q.setAttribute('content', getComputedStyle($D.documentElement).getPropertyValue('--wn-color-bg'));
 	},
-	jump: () => {
+	join: () => {
 		let val=$DAT.GAME_MAX > 1 ? $DAT.GAME_MAX : 1;
 		if((val=parseInt(prompt(`Enter game # to join [1-${val}]:`))) > 0)
 			location.hash = '#' + val;
