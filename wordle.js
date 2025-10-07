@@ -282,7 +282,7 @@ GUI: {
 	},
 	jump: () => {
 		let val=$DAT.GAME_MAX > 1 ? $DAT.GAME_MAX : 1;
-		if((val=parseInt(prompt(`Enter game # to jump to [1-${val}]:`))) > 0)
+		if((val=parseInt(prompt(`Enter game # to join [1-${val}]:`))) > 0)
 			location.hash = '#' + val;
 	}
 },
