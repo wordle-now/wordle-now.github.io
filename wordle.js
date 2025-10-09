@@ -93,9 +93,10 @@ EVT: {
 		$NET.write(_M[1]);
 	},
 	visibilitychange: e => {
+		$NET.write('P');
+		$NFY.requestWakeLock();
 		while($NFY.NOTIFICATIONS.length > 0)
 			($NFY.NOTIFICATIONS.shift()).close();
-		$NET.write('P');
 	}
 },
 
@@ -406,11 +407,12 @@ NET: {
 /*************************************************************************************************\
 \*******  AUDIO & BROWSER API NOTIFY LOGIC  *********************************  [ $NFY.* ]  *******/
 NFY: {
-	ALLOWED: null, TITLE: null, TIMEOUT: null, NOTIFICATIONS: [],
+	ALLOWED: null, TITLE: null, WAKELOCK: null, TIMEOUT: null, NOTIFICATIONS: [],
 
 	setup: () => {
 		$NFY.TITLE = $D.title;
 		$NFY.requestPermission();
+		$NFY.requestWakeLock();
 	},
 	notify: msg => {
 		if(!$isVisible() && typeof Notification != 'undefined' && Notification.permission == 'granted') {
@@ -436,6 +438,17 @@ NFY: {
 			else if (status == 'granted')
 				$NFY.ALLOWED = true;
 		}).catch(() => $NFY.ALLOWED = null);
+	},
+	requestWakeLock: () => {
+		if(!navigator.wakeLock || $NFY.WAKELOCK)
+			return;
+		navigator.wakeLock.request('screen').then(wakeLock => {
+			$NFY.WAKELOCK = wakeLock;
+			$NFY.WAKELOCK.addEventListener('release', () => {
+				$NFY.WAKELOCK = null;
+				$NFY.requestWakeLock();
+			});
+		}).catch(() => $NFY.WAKELOCK = null);
 	}
 },
 
