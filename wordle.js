@@ -362,6 +362,9 @@ NET: {
 				if(args[1]==$DAT.GAME)
 					$NFY.notify($playerIdToName(args[2])+' joined game #'+args[1]);
 				break;
+			case 'D':
+				$GUI.bubble($playerIdToName(args[1]) + ' disconnected');
+				break;
 			case 'E':
 				$GUI.error(args[1]);
 				$GUI.busy(false);
