@@ -383,7 +383,7 @@ NET: {
 					$GUI.bubble($playerIdToName(args[2]) + ' ' + args[3].split('').map(x=>'['+x.toLowerCase()+']').join('') + (args[4]?" \ufe5f" +args[4]:'') );
 				break;
 			case 'W':
-				const msg = (args[2]==$DAT.PLAYER_ID?'You':$playerIdToName(args[2]))+' '+($DAT.GAME==$DAT.GAME_MAX?'Won':'Finished')+' #'+args[1]+' '+args[3].split('').map(x=>'[g'+x.toUpperCase()+']').join('')+(args[4]?' in '+args[4]:'')+'!';
+				const msg = (args[2]==$DAT.PLAYER_ID?'You':$playerIdToName(args[2]))+' '+($DAT.GAME==$DAT.GAME_MAX?'won':'finished')+' #'+args[1]+' '+(args[4]?' in '+args[4]:'')+': '+args[3].split('').map(x=>'[g'+x.toUpperCase()+']').join('');
 				if(args[1]>=$DAT.GAME_MAX)
 					$DAT.setGameMax(args[1], 1);
 				if(args[1]!=$DAT.GAME && args[2]==$DAT.PLAYER_ID)
