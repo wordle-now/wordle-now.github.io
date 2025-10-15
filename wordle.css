@@ -31,6 +31,10 @@
 	--wn-color-9: #fbfcff;
 	--wn-color-10: #1a1a21;
 }
+@keyframes w_logo_dash {
+	from { stroke-dashoffset: 2000; }
+	to { stroke-dashoffset: 0; }
+}
 @keyframes w_letter_typed {
 	0% {
 		margin: min(0.5dvh,1dvw);
@@ -136,15 +140,39 @@ html, body {
 	height: 100dvh;
 	position: relative;
 }
+#w_logo {
+	position: absolute;
+	top: 30dvh;
+	left: 50%;
+	transform: translateX(-50%);
+	height: auto;
+	margin: auto;
+	width: 40dvw;
+	transition: 0s;
+	z-index: 3;
+	animation: w_fade_out 0.5s ease 2.7s 1 normal forwards;
+}
+#w_logo path {
+	stroke-dasharray: 200;
+	stroke-dashoffset: 200;
+	animation: w_logo_dash 5s linear alternate infinite;
+	filter: drop-shadow( 75px -75px 0px rgba(0, 0, 0, 1));
+	fill: var(--wn-color-6) !important;
+	stroke: var(--wn-color-6) !important;
+}
+#w_logo path:nth-child(1), #w_logo path:nth-child(2), #w_logo path:nth-child(9), #w_logo path:nth-child(13) {
+	fill: var(--wn-color-fg) !important;
+	stroke: var(--wn-color-6) !important;
+}
 #w_join, #w_theme {
 	z-index: 2;
 	position: fixed;
 	top: 2.5dvmin;
-	height: 4dvmin;
-	width: 4dvmin;
+	height: 5dvmin;
+	width: 5dvmin;
 	font-weight: bold;
-	font-size: 4dvmin;
-	line-height: 4dvmin;
+	font-size: 5dvmin;
+	line-height: 5dvmin;
 	text-align: center;
 	background-color: var(--wn-color-2);
 	color: var(--wn-color-1);
@@ -242,6 +270,13 @@ body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child 
 	display: flex;
 	width: 100%;
 }
+#w_rows > div { opacity: 0; }
+#w_rows > div:nth-child(1) { animation: w_fade_in 0.8s ease 2.4s 1 normal forwards; }
+#w_rows > div:nth-child(2) { animation: w_fade_in 0.8s ease 2.6s 1 normal forwards; }
+#w_rows > div:nth-child(3) { animation: w_fade_in 0.8s ease 2.8s 1 normal forwards; }
+#w_rows > div:nth-child(4) { animation: w_fade_in 0.8s ease 2.8s 1 normal forwards; }
+#w_rows > div:nth-child(5) { animation: w_fade_in 0.8s ease 2.6s 1 normal forwards; }
+#w_rows > div:nth-child(6) { animation: w_fade_in 0.8s ease 2.4s 1 normal forwards; }
 #w_rows i {
 	font-style: normal !important;
 	font-weight: bold !important;
@@ -394,7 +429,6 @@ body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child 
 	}
 }
 @media (max-aspect-ratio: 1/1) {
-	#w_keyboard {
-		width: 100dvw;
-	}
+	#w_keyboard { width: 100dvw; }
+	#w_logo { width: 80dvw; }
 }
