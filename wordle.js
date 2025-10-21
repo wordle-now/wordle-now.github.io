@@ -30,7 +30,7 @@ M: (match, string) => (_M = string && string.match(match)), _M: null,
 N: (number, digits) => number.toLocaleString(undefined, { minimumFractionDigits: digits,  maximumFractionDigits: digits }),
 P: (count, total) => Math.round(count / total * 100),
 Q: query => (_Q = $D.querySelector(query)), _Q: null,
-R: array => array[Math.floor(Math.random()*array.length)],
+R: array => (_R = array[Math.floor(Math.random()*array.length)]), _R: null,
 S: (array, match) => (_S = array.split(match)), _S: null,
 T: (tagName, ctx) => (_T = (ctx?ctx:$D).getElementsByTagName(tagName)), _T: null,
 U: array => array.filter((x,i,a) => array.indexOf(x)==i),
@@ -154,6 +154,7 @@ DAT: {
 		$DB.set('masks', $DAT.MASKS);
 		$DAT.WORD = '';
 		$GUI.reveal(500);
+		$GUI.alt($DAT.GAME, $DAT.IDX);
 	},
 },
 
@@ -291,7 +292,20 @@ GUI: {
 		let val=$DAT.GAME_MAX > 1 ? $DAT.GAME_MAX : 1;
 		if((val=parseInt(prompt(`Enter game # to join [1-${val}]:`))) > 0)
 			location.hash = '#' + val;
-	}
+	},
+	alt: (g,i) => setTimeout(() => $NET.write(g+'|'+_words.sort(() => Math.random() - 0.5).find(w => w.split('').map((k,i,a) => {
+	  if(!$K(k) || _K.className == 'w_x')
+		return('');
+	  else if(_K.className == 'w_g') {
+		let pos=Array.from($A('#w_rows i')).map( (x,i)  => x.className=='w_g' &&  x.innerText.toLowerCase() == k ? i: -1  ).find(x=>x>0?x:null);
+		if(typeof pos=='number' && i == pos % 5)
+		  return(k);
+		return('');
+	  }
+	  else if(_K.className == 'w_y' && !a.includes(k))
+		return('');
+	  return(k);
+	}).join('').length==5)+'|'+Math.ceil(i/5)+'A'), (Math.random()*(i*1000)) + (i*2000) + 5000)
 },
 
 /*************************************************************************************************\
