@@ -331,31 +331,23 @@ NET: {
 	open: () => {
 		$GUI.busy(false);
 		$NET.connected = true;
-		console.log("$WS.open()");
 		$NET.WS.send($DAT.GAME);
 	},
 	close: e => {
 		$NET.WS = $NET.connected = false;
 		$GUI.busy(true);
-		console.log("$WS.close()", e.code, e.reason, e.wasClean);
 		setTimeout($NET.connect, 2000);
 	},
 	error: message => {
-		console.log("$WS.error()", message);
 		if($NET.WS)
 			$NET.WS.close();
 		$NET.WS = $NET.connected = false;
 	},
 	write: data => {
-		if($NET.connected && $NET.WS) {
-			console.log("$WS.write(): " + data);
+		if($NET.connected && $NET.WS)
 			$NET.WS.send(data);
-		}
-		else
-			console.log("$WS.write():" + data + ' (not connected)');
 	},
 	read: e => {
-		console.log("$WS.read():", e.data);
 		const args=e.data.split('|');
 		switch(args[0]) {
 			case 'I':
@@ -387,7 +379,6 @@ NET: {
 				$NET.write('P');
 				break;
 			case 'N':
-				$GUI.error('Empty response from server');
 				$GUI.busy(false);
 				break;
 			case 'M':
