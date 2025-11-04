@@ -202,6 +202,7 @@ GUI: {
 		else {
 			$E('w_load').className = 'w_retry';
 			_E.style.display = 'block';
+			$E('w_follow').style.display = 'none';
 		}
 	},
 	load: type => {
@@ -276,8 +277,10 @@ GUI: {
 	update: () => {
 		$V('w_player', $DAT.PLAYER_NAME ? $DAT.PLAYER_NAME : '(not connected)');
 		$V('w_game', $DAT.GAME_MAX>$DAT.GAME ? `${$DAT.GAME}/${$DAT.GAME_MAX}` : $DAT.GAME);
-		if(!$E('w_load').className)
+		if(!$E('w_load').className) {
 			_E.style.display = $DAT.GAME_MAX>$DAT.GAME ? 'block' : 'none';
+			$E('w_follow').style.display = $DAT.GAME_MAX>$DAT.GAME ? 'none' : 'block';
+		}
 	},
 	dark: explicit => {
 		if(typeof explicit == 'boolean')

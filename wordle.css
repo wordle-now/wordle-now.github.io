@@ -311,7 +311,7 @@ body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child 
 	border-color: var(--wn-color-8) !important;
 	color: var(--wn-color-9) !important;
 }
-#w_load {
+#w_load, #w_follow  {
 	display: block;
 	z-index: 0;
 	position: absolute;
@@ -323,7 +323,6 @@ body:not(.w_dark) #w_theme svg:first-child, body.w_dark #w_theme svg:last-child 
 	font-size: max(3dvmin, 3dvh) !important;
 	font-weight: bold;
 	white-space: nowrap;
-	display: none;
 }
 #w_load:not(.w_retry) > span:last-child, #w_load.w_retry > span:first-child { display: none; }
 #w_load > span > span { text-decoration: underline; }
